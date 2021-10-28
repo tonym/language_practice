@@ -1,0 +1,31 @@
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+strong,
+b {
+  font-weight: bolder;
+}
+body {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 16px;
+  font-family: 'Open Sans', 'Helvetica', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  text-rendering: optimizeSpeed;
+  scroll-behavior: smooth;
+  background-color: #fafafa;
+}
+@media print {
+  body {
+    background-color: #fff;
+  }
+}
+body::backdrop {
+  background-color: #fafafa;
+}
