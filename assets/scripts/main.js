@@ -41,7 +41,9 @@ speech.onstart = e => {
 };
 
 function selectPlayIcon() {
-  playIcon.innerHTML = started ? (playing ? pause : play) : stop;
+  if (!playButton.disabled) {
+    playIcon.innerHTML = started ? (playing ? pause : play) : stop;
+  }
 }
 
 function startPlay() {

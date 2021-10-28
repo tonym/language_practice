@@ -41,7 +41,7 @@
       <h1 class="og-typography-root og-typography-paragraph og-typography-h1 og-typography-font-weight-regular text-light">Čeština</h1>
       <hr />
       <h2 class="og-typography-root og-typography-paragraph og-typography-h2 og-typography-font-weight-regular text-light">Text na řeč</h2>
-      <textarea class="form-control bg-dark text-light mt-3" cols="24" rows="6" placeholder="Type here..."></textarea>
+      <textarea class="form-control bg-dark text-light mt-3" cols="24" rows="6"></textarea>
       <div class="og-flex-root">
         <button id="play" class="btn btn-dark mt-2" disabled>
           <span id="play-icon" class="material-icons md-36"> play_circle_outline </span>
@@ -52,19 +52,21 @@
       <select id="quizzes" name="quizzes" class="form-select bg-secondary">
         <option value="">-- Vyberte kvíz --</option>
       </select>
-      <input type="text" id="answer" class="form-control mt-5 bg-secondary" />
-      <div class="og-flex-root flex-gap">
-        <button id="listen" class="btn btn-dark mt-2" disabled>
-          <span id="listen-icon" class="material-icons md-36"> volume_up </span>
-        </button>
-        <div class="flex-child"></div>
-        <button id="check" class="btn btn-dark mt-2" disabled>
-          <span id="check-icon" class="material-icons md-36"> check </span>
-        </button>
-        <button id="next" class="btn btn-dark mt-2" disabled>
-          <span id="next-icon" class="material-icons md-36"> arrow_forward </span>
-        </button>
-      </div>
+      <form id="quiz-form">
+        <input type="text" id="answer" class="form-control mt-5 bg-secondary" disabled />
+        <div class="og-flex-root og-flex-align-items-center flex-gap">
+          <button id="listen" type="button" class="btn btn-dark mt-2" disabled>
+            <span id="listen-icon" class="material-icons md-36"> volume_up </span>
+          </button>
+          <div id="result" class="flex-child og-typography-root og-typography-body1 og-typography-align-center"></div>
+          <button id="check" type="submit" class="btn btn-dark mt-2" disabled>
+            <span id="check-icon" class="material-icons md-36"> check </span>
+          </button>
+          <button id="next" type="button" class="btn btn-dark mt-2" disabled>
+            <span id="next-icon" class="material-icons md-36"> arrow_forward </span>
+          </button>
+        </div>
+      </form>
       <div class="footer"></div>
     </div>
     <div
