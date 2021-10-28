@@ -1,5 +1,5 @@
 let speech = new SpeechSynthesisUtterance();
-speech.lang = "cs-CZ";
+speech.lang = 'cs-CZ';
 
 let voices = [];
 window.speechSynthesis.onvoiceschanged = () => {
@@ -13,37 +13,39 @@ let started = false;
 const play = 'play_circle';
 const pause = 'pause_circle';
 const stop = 'play_circle_outline';
-const playButton = document.querySelector("#play");
+const playButton = document.querySelector('#play');
+const playIcon = document.querySelector('#play-icon');
+const textarea = document.querySelector('textarea');
 
-speech.onend = (e) => {
+speech.onend = e => {
   playing = false;
   started = false;
   selectPlayIcon();
-}
+};
 
-speech.onpause = (e) => {
+speech.onpause = e => {
   playing = false;
   selectPlayIcon();
-}
+};
 
-speech.onresume = (e) => {
+speech.onresume = e => {
   playing = true;
   selectPlayIcon();
-}
+};
 
-speech.onstart = (e) => {
+speech.onstart = e => {
   console.log(e);
   playing = true;
   started = true;
   selectPlayIcon();
-}
+};
 
 function selectPlayIcon() {
-  playButton.innerHTML = started ? playing ? pause : play : stop;
+  playIcon.innerHTML = started ? (playing ? pause : play) : stop;
 }
 
 function startPlay() {
-  speech.text = document.querySelector("textarea").value;
+  speech.text = textarea.value;
   window.speechSynthesis.speak(speech);
 }
 
@@ -59,7 +61,7 @@ function resumePlay() {
   selectPlayIcon();
 }
 
-playButton.addEventListener("click", (e) => {
+playButton.addEventListener('click', e => {
   if (!started && !playing) {
     startPlay();
   } else if (started && playing) {
@@ -69,20 +71,6 @@ playButton.addEventListener("click", (e) => {
   }
 });
 
-document.querySelector("#rate").addEventListener("input", () => {
-  const rate = document.querySelector("#rate").value;
-  speech.rate = rate;
-  document.querySelector("#rate-label").innerHTML = rate;
-});
-
-document.querySelector("#volume").addEventListener("input", () => {
-  const volume = document.querySelector("#volume").value;
-  speech.volume = volume * 0.1;
-  document.querySelector("#volume-label").innerHTML = volume;
-});
-
-document.querySelector("#pitch").addEventListener("input", () => {
-  const pitch = document.querySelector("#pitch").value;
-  speech.pitch = pitch;
-  document.querySelector("#pitch-label").innerHTML = pitch;
+textarea.addEventListener('keyup', () => {
+  playButton.disabled = !textarea.value.length > 0;
 });

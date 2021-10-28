@@ -5,20 +5,26 @@
     <link href="./assets/styles/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/styles/baseline.min.css" />
     <link rel="stylesheet" href="./assets/styles/gemini_css.min.css" />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700&display=swap"
-    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700&display=swap" />
     <style>
       .flex-child {
         flex: 1;
       }
       .flex-gap {
         gap: 24px;
+      }
+      .footer {
+        min-height: 48px;
+      }
+      .material-icons {
+        vertical-align: text-top;
+      }
+      .material-icons.md-btn {
+        cursor: pointer;
+      }
+      .material-icons.md-36 {
+        font-size: 36px;
       }
       .material-icons.md-48 {
         font-size: 64px;
@@ -32,125 +38,67 @@
   </head>
   <body class="container mt-5 bg-dark text-light">
     <div class="wrapper">
-      <h1
-        class="
-          og-typography-root
-          og-typography-paragraph
-          og-typography-h1
-          og-typography-font-weight-regular
-          text-light
-        "
-      >
-        Čeština
-      </h1>
-      <h2
-        class="
-          og-typography-root
-          og-typography-paragraph
-          og-typography-h2
-          og-typography-font-weight-regular
-          text-light
-        "
-      >
-        Text na řeč
-      </h2>
-      <div
-        class="
-          og-flex-root og-flex-justify-content-space-evenly
-          flex-gap
-          text-light
-        "
-      >
-        <div class="flex-child">
-          <p
-            class="
-              og-typography-root og-typography-gutter-bottom og-typography-body1
-            "
-          >
-            Objem
-          </p>
-          <div class="og-flex-root">
-            <input
-              class="flex-child"
-              type="range"
-              min="0"
-              max="10"
-              value="8"
-              step="1"
-              id="volume"
-            />
-            <span id="volume-label" class="ms-2">8</span>
-          </div>
-        </div>
-        <div class="flex-child">
-          <p
-            class="
-              og-typography-root og-typography-gutter-bottom og-typography-body1
-            "
-          >
-            Tempo
-          </p>
-          <div class="og-flex-root">
-            <input
-              class="flex-child"
-              type="range"
-              min=".1"
-              max="2"
-              value="1"
-              id="rate"
-              step="0.1"
-            />
-            <span id="rate-label" class="ms-2">1</span>
-          </div>
-        </div>
-        <div class="flex-child">
-          <p
-            class="
-              og-typography-root og-typography-gutter-bottom og-typography-body1
-            "
-          >
-            Tón
-          </p>
-          <div class="og-flex-root">
-            <input
-              class="flex-child"
-              type="range"
-              min="0"
-              max="2"
-              value="1"
-              step="0.1"
-              id="pitch"
-            />
-            <span id="pitch-label" class="ms-2">1</span>
-          </div>
-        </div>
-      </div>
-      <textarea
-        class="form-control bg-dark text-light mt-3"
-        cols="30"
-        rows="10"
-        placeholder="Type here..."
-      ></textarea>
-      <div class="og-flex-root og-flex-justify-content-center">
-        <span id="play" class="material-icons md-48 mt-3 text-light">
-          play_circle_outline
-        </span>
+      <h1 class="og-typography-root og-typography-paragraph og-typography-h1 og-typography-font-weight-regular text-light">Čeština</h1>
+      <hr />
+      <h2 class="og-typography-root og-typography-paragraph og-typography-h2 og-typography-font-weight-regular text-light">Text na řeč</h2>
+      <textarea class="form-control bg-dark text-light mt-3" cols="24" rows="6" placeholder="Type here..."></textarea>
+      <div class="og-flex-root">
+        <button id="play" class="btn btn-dark mt-2" disabled>
+          <span id="play-icon" class="material-icons md-36"> play_circle_outline </span>
+        </button>
       </div>
       <hr />
-      <h2
-        class="
-          og-typography-root
-          og-typography-paragraph
-          og-typography-h2
-          og-typography-font-weight-regular
-          text-light
-        "
-      >
-        Kvíz
-      </h2>
+      <h2 class="og-typography-root og-typography-paragraph og-typography-h2 og-typography-font-weight-regular text-light">Kvíz</h2>
       <select id="quizzes" name="quizzes" class="form-select bg-secondary">
         <option value="">-- Vyberte kvíz --</option>
       </select>
+      <input type="text" id="answer" class="form-control mt-5 bg-secondary" />
+      <div class="og-flex-root flex-gap">
+        <button id="listen" class="btn btn-dark mt-2" disabled>
+          <span id="listen-icon" class="material-icons md-36"> volume_up </span>
+        </button>
+        <div class="flex-child"></div>
+        <button id="check" class="btn btn-dark mt-2" disabled>
+          <span id="check-icon" class="material-icons md-36"> check </span>
+        </button>
+        <button id="next" class="btn btn-dark mt-2" disabled>
+          <span id="next-icon" class="material-icons md-36"> arrow_forward </span>
+        </button>
+      </div>
+      <div class="footer"></div>
+    </div>
+    <div
+      class="
+        og-app-bar-root og-app-bar-background-color-inherit og-app-bar-elevated-bottom og-app-bar-placement-bottom og-app-bar-position-fixed
+      "
+    >
+      <div class="container">
+        <div class="wrapper">
+          <div class="og-flex-root og-flex-justify-content-space-evenly flex-gap text-light mt-3 mb-3">
+            <div class="flex-child">
+              <p class="og-typography-root og-typography-gutter-bottom og-typography-body1">Objem</p>
+              <div class="og-flex-root">
+                <input class="flex-child" type="range" min="0" max="10" value="8" step="1" id="volume" />
+                <span id="volume-label" class="ms-2">8</span>
+              </div>
+            </div>
+            <div class="flex-child">
+              <p class="og-typography-root og-typography-gutter-bottom og-typography-body1">Tempo</p>
+              <div class="og-flex-root">
+                <input class="flex-child" type="range" min=".1" max="2" value="1" id="rate" step="0.1" />
+                <span id="rate-label" class="ms-2">1</span>
+              </div>
+            </div>
+            <div class="flex-child">
+              <p class="og-typography-root og-typography-gutter-bottom og-typography-body1">Tón</p>
+              <div class="og-flex-root">
+                <input class="flex-child" type="range" min="0" max="2" value="1" step="0.1" id="pitch" />
+                <span id="pitch-label" class="ms-2">1</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
   <script src="./assets/scripts/main.js"></script>
