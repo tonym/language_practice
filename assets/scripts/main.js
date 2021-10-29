@@ -34,7 +34,6 @@ speech.onresume = e => {
 };
 
 speech.onstart = e => {
-  console.log(e);
   playing = true;
   started = true;
   selectPlayIcon();
