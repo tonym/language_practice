@@ -1,11 +1,15 @@
 const quizzes = [
   {
     name: 'Čislo',
-    questions: generateNumberQuiz()
+    questions: generateNumberQuiz(0, 10000)
   },
   {
     name: 'Čislo 0 - 100',
     questions: generateNumberQuiz(0, 100)
+  },
+  {
+    name: 'Čislo 100 - 1000',
+    questions: generateNumberQuiz(100, 1000)
   },
   {
     name: 'Měsíce',
