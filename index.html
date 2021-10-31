@@ -49,11 +49,19 @@
       </div>
       <hr />
       <h2 class="og-typography-root og-typography-paragraph og-typography-h2 og-typography-font-weight-regular text-light">Kvíz</h2>
-      <select id="quizzes" name="quizzes" class="form-select bg-secondary">
+      <select id="quizzes" name="quizzes" class="form-select bg-secondary mb-2">
         <option value="">-- vyberte kvíz --</option>
       </select>
+      <h3
+        class="
+          og-typography-root og-typography-h3 og-typography-align-inherit og-typography-display-block og-typography-font-weight-regular
+        "
+      >
+        Instrukce
+      </h3>
+      <p id="description" class="og-typography-root og-typography-align-inherit og-typography-display-block">--</p>
       <form id="quiz-form">
-        <input type="text" id="answer" class="form-control mt-5 bg-secondary" disabled />
+        <input type="text" id="answer" class="form-control mt-4 bg-secondary" disabled />
         <div class="og-flex-root og-flex-align-items-center flex-gap">
           <button id="listen" type="button" class="btn btn-dark mt-2" disabled>
             <span id="listen-icon" class="material-icons md-36"> volume_up </span>

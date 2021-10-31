@@ -8,6 +8,7 @@ const successMessage = 'Correct';
 
 const answerInput = document.querySelector('#answer');
 const checkButton = document.querySelector('#check');
+const description = document.querySelector('#description');
 const listenButton = document.querySelector('#listen');
 const nextButton = document.querySelector('#next');
 const quizForm = document.querySelector('#quiz-form');
@@ -20,6 +21,7 @@ quizzes.forEach((quiz, index) => {
 
 quizSelector.addEventListener('change', () => {
   quiz = quizSelector.value ? quizzes[quizSelector.value] : undefined;
+  description.innerHTML = quiz ? quiz.description : '--';
   configureControls();
 });
 
@@ -44,12 +46,12 @@ answerInput.addEventListener('keyup', () => {
 quizForm.addEventListener('submit', e => {
   e.preventDefault();
   if (nextButton.disabled) {
-    if (answerInput.value.trim().toLowerCase() === question.answer) {
+    if (question.answer.includes(answerInput.value.trim().toLowerCase())) {
       resultMessage.classList.add(successClass);
       resultMessage.innerHTML = successMessage;
     } else {
       resultMessage.classList.add(errorClass);
-      resultMessage.innerHTML = errorMessage + question.answer;
+      resultMessage.innerHTML = errorMessage + question.answer[0];
     }
     nextButton.disabled = false;
   } else {
