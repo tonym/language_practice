@@ -127,116 +127,116 @@ const quizzes = [
     name: 'Počasí',
     questions: [
       {
-        answer: 'oblačno',
-        question: 'cloudy'
+        question: 'oblačno',
+        answer: 'cloudy'
       },
       {
-        answer: 'je slunečno',
-        question: 'it is sunny'
+        question: 'je slunečno',
+        answer: 'it is sunny'
       },
       {
-        answer: 'je plískanice',
-        question: 'it is sleeting sleet'
+        question: 'je plískanice',
+        answer: 'it is sleeting sleet'
       },
       {
-        answer: 'padá sníh',
-        question: 'it is snowing snow is falling'
+        question: 'padá sníh',
+        answer: 'it is snowing snow is falling'
       },
       {
-        answer: 'hrom',
-        question: 'thunder'
+        question: 'hrom',
+        answer: 'thunder'
       },
       {
-        answer: 'padají kroupy',
-        question: 'it is hailing hail'
+        question: 'padají kroupy',
+        answer: 'it is hailing hail'
       },
       {
-        answer: 'je led',
-        question: 'it is icy ice'
+        question: 'je led',
+        answer: 'it is icy ice'
       },
       {
-        answer: 'tornádo',
-        question: 'tornado'
+        question: 'tornádo',
+        answer: 'tornado'
       },
       {
-        answer: 'je horko',
-        question: 'it is hot'
+        question: 'je horko',
+        answer: 'it is hot'
       },
       {
-        answer: 'je teplo',
-        question: 'it is warm'
+        question: 'je teplo',
+        answer: 'it is warm'
       },
       {
-        answer: 'je chladno',
-        question: 'it is cold'
+        question: 'je chladno',
+        answer: 'it is cold'
       },
       {
-        answer: 'je zima',
-        question: 'it is very cold'
+        question: 'je zima',
+        answer: 'it is very cold'
       },
       {
-        answer: 'mráz',
-        question: 'frost'
+        question: 'mráz',
+        answer: 'frost'
       },
       {
-        answer: 'je mrzne',
-        question: 'it is freezing'
+        question: 'je mrzne',
+        answer: 'it is freezing'
       },
       {
-        answer: 'duha',
-        question: 'rainbow'
+        question: 'duha',
+        answer: 'rainbow'
       },
       {
-        answer: 'je jasno',
-        question: 'it is clear sky'
+        question: 'je jasno',
+        answer: 'it is clear sky'
       },
       {
-        answer: 'je fouká',
-        question: 'it is windy'
+        question: 'je fouká',
+        answer: 'it is windy'
       },
       {
-        answer: 'je mlha',
-        question: 'it is foggy fog it is fog'
+        question: 'je mlha',
+        answer: 'it is foggy fog it is fog'
       },
       {
-        answer: 'je bouře',
-        question: 'it is stormy storm storming it is storming'
+        question: 'je bouře',
+        answer: 'it is stormy storm storming it is storming'
       },
       {
-        answer: 'bouřka',
-        question: 'thunderstorm'
+        question: 'bouřka',
+        answer: 'thunderstorm'
       },
       {
-        answer: 'blesk',
-        question: 'lightning'
+        question: 'blesk',
+        answer: 'lightning'
       },
       {
-        answer: 'je prší',
-        question: 'it is raining rain it rains'
+        question: 'je prší',
+        answer: 'it is raining rain it rains'
       },
       {
-        answer: 'padá déšť',
-        question: 'it is raining rain it rains'
+        question: 'padá déšť',
+        answer: 'it is raining rain it rains'
       },
       {
-        answer: 'je deštivo',
-        question: 'it is rainy it is raining rain it rains'
+        question: 'je deštivo',
+        answer: 'it is rainy it is raining rain it rains'
       },
       {
-        answer: 'je polojasno',
-        question: 'it is partly sunny it is partly cloudy'
+        question: 'je polojasno',
+        answer: 'it is partly sunny it is partly cloudy'
       },
       {
-        answer: 'předpověď počasí',
-        question: 'weather forecast'
+        question: 'předpověď počasí',
+        answer: 'weather forecast'
       },
       {
-        answer: 'západ slunce',
-        question: 'sunset'
+        question: 'západ slunce',
+        answer: 'sunset'
       },
       {
-        answer: 'východ slunce',
-        question: 'sunrise'
+        question: 'východ slunce',
+        answer: 'sunrise'
       }
     ]
   }
