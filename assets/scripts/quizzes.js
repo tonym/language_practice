@@ -121,6 +121,124 @@ const quizzes = [
         question: 'Jaký je dvanáctý měsíc v roce?'
       }
     ]
+  },
+  {
+    description: 'Opakujte v angličtině',
+    name: 'Počasí',
+    questions: [
+      {
+        answer: 'oblačno',
+        question: 'cloudy'
+      },
+      {
+        answer: 'je slunečno',
+        question: 'it is sunny'
+      }
+      {
+        answer: 'je plískanice',
+        question: 'it is sleeting sleet'
+      },
+      {
+        answer: 'padá sníh',
+        question: 'it is snowing snow is falling'
+      },
+      {
+        answer: 'hrom',
+        question: 'thunder'
+      },
+      {
+        answer: 'padají kroupy',
+        question: 'it is hailing hail'
+      },
+      {
+        answer: 'je led',
+        question: 'it is icy ice'
+      },
+      {
+        answer: 'tornádo',
+        question: 'tornado'
+      },
+      {
+        answer: 'je horko',
+        question: 'it is hot'
+      },
+      {
+        answer: 'je teplo',
+        question: 'it is warm'
+      },
+      {
+        answer: 'je chladno',
+        question: 'it is cold'
+      },
+      {
+        answer: 'je zima',
+        question: 'it is very cold'
+      },
+      {
+        answer: 'mráz',
+        question: 'frost'
+      },
+      {
+        answer: 'je mrzne',
+        question: 'it is freezing'
+      },
+      {
+        answer: 'duha',
+        question: 'rainbow'
+      },
+      {
+        answer: 'je jasno',
+        question: 'it is clear sky'
+      },
+      {
+        answer: 'je fouká',
+        question: 'it is windy'
+      },
+      {
+        answer: 'je mlha',
+        question: 'it is foggy fog it is fog'
+      },
+      {
+        answer: 'je bouře',
+        question: 'it is stormy storm storming it is storming'
+      },
+      {
+        answer: 'bouřka',
+        question: 'thunderstorm'
+      },
+      {
+        answer: 'blesk',
+        question: 'lightning'
+      },
+      {
+        answer: 'je prší',
+        question: 'it is raining rain it rains'
+      },
+      {
+        answer: 'padá déšť',
+        question: 'it is raining rain it rains'
+      },
+      {
+        answer: 'je deštivo',
+        question: 'it is rainy it is raining rain it rains'
+      },
+      {
+        answer: 'je polojasno',
+        question: 'it is partly sunny it is partly cloudy'
+      },
+      {
+        answer: 'předpověď počasí',
+        question: 'weather forecast'
+      },
+      {
+        answer: 'západ slunce',
+        question: 'sunset'
+      },
+      {
+        answer: 'východ slunce',
+        question: 'sunrise'
+      }
+    ]
   }
 ];
 
