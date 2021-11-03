@@ -132,7 +132,7 @@ const quizzes = [
       },
       {
         question: 'je slunečno',
-        answer: ['it is sunny']
+        answer: ['it is sunny', 'sunny']
       },
       {
         question: 'je plískanice',
@@ -172,7 +172,7 @@ const quizzes = [
       },
       {
         question: 'je zima',
-        answer: ['it is very cold', 'cold', 'very cold']
+        answer: ['it is very cold', 'it is cold', 'cold', 'very cold']
       },
       {
         question: 'mráz',
@@ -221,7 +221,7 @@ const quizzes = [
       },
       {
         question: 'je prší',
-        answer: ['it is raining', 'rain', 'it rains']
+        answer: ['it is raining', 'rain', 'raining', 'it rains']
       },
       {
         question: 'padá déšť',
