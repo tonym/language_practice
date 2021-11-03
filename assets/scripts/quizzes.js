@@ -133,7 +133,7 @@ const quizzes = [
       {
         answer: 'je slunečno',
         question: 'it is sunny'
-      }
+      },
       {
         answer: 'je plískanice',
         question: 'it is sleeting sleet'
