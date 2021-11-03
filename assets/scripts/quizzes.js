@@ -127,20 +127,20 @@ const quizzes = [
     name: 'Počasí',
     questions: [
       {
-        question: 'oblačno',
+        question: '[oblačno]',
         answer: 'cloudy'
       },
       {
         question: 'je slunečno',
-        answer: 'it is sunny'
+        answer: ['it is sunny']
       },
       {
         question: 'je plískanice',
-        answer: 'it is sleeting sleet'
+        answer: ['it is sleeting', 'sleet']
       },
       {
         question: 'padá sníh',
-        answer: 'it is snowing snow is falling'
+        answer: ['it is snowing', 'snow is falling', 'snowing', 'snow']
       },
       {
         question: 'hrom',
@@ -148,95 +148,104 @@ const quizzes = [
       },
       {
         question: 'padají kroupy',
-        answer: 'it is hailing hail'
+        answer: ['it is hailing', 'hail', 'hailing']
       },
       {
         question: 'je led',
-        answer: 'it is icy ice'
+        answer: ['it is icy', 'ice', 'icy']
       },
       {
         question: 'tornádo',
-        answer: 'tornado'
+        answer: ['tornado']
       },
       {
         question: 'je horko',
-        answer: 'it is hot'
+        answer: ['it is hot', 'hot']
       },
       {
         question: 'je teplo',
-        answer: 'it is warm'
+        answer: ['it is warm', 'warm']
       },
       {
         question: 'je chladno',
-        answer: 'it is cold'
+        answer: ['it is cold', 'cold', 'chilly']
       },
       {
         question: 'je zima',
-        answer: 'it is very cold'
+        answer: ['it is very cold', 'cold', 'very cold']
       },
       {
         question: 'mráz',
-        answer: 'frost'
+        answer: ['frost']
       },
       {
         question: 'je mrzne',
-        answer: 'it is freezing'
+        answer: ['it is freezing', 'freezing']
       },
       {
         question: 'duha',
-        answer: 'rainbow'
+        answer: ['rainbow']
       },
       {
         question: 'je jasno',
-        answer: 'it is clear sky'
+        answer: [
+          'it is clear sky',
+          'the sky is clear',
+          'sky is clear',
+          'it is a clear sky',
+          'clear sky',
+          'clear',
+          'it is clear',
+          'clear skies'
+        ]
       },
       {
         question: 'je fouká',
-        answer: 'it is windy'
+        answer: ['it is windy', 'windy']
       },
       {
         question: 'je mlha',
-        answer: 'it is foggy fog it is fog'
+        answer: ['it is foggy', 'fog', 'it is fog', 'foggy']
       },
       {
         question: 'je bouře',
-        answer: 'it is stormy storm storming it is storming'
+        answer: ['it is stormy', 'storm', 'storming', 'it is storming']
       },
       {
         question: 'bouřka',
-        answer: 'thunderstorm'
+        answer: ['thunderstorm']
       },
       {
         question: 'blesk',
-        answer: 'lightning'
+        answer: ['lightning']
       },
       {
         question: 'je prší',
-        answer: 'it is raining rain it rains'
+        answer: ['it is raining', 'rain', 'it rains']
       },
       {
         question: 'padá déšť',
-        answer: 'it is raining rain it rains'
+        answer: ['it is raining', 'rain', 'it rains']
       },
       {
         question: 'je deštivo',
-        answer: 'it is rainy it is raining rain it rains'
+        answer: ['it is rainy', 'it is raining', 'rain', 'it rains']
       },
       {
         question: 'je polojasno',
-        answer: 'it is partly sunny it is partly cloudy'
+        answer: ['it is partly sunny', 'it is partly cloudy', 'partly sunny', 'partly cloudy']
       },
       {
         question: 'předpověď počasí',
-        answer: 'weather forecast'
+        answer: ['weather forecast']
       },
       {
         question: 'západ slunce',
-        answer: 'sunset'
+        answer: ['sunset']
       },
       {
         question: 'východ slunce',
-        answer: 'sunrise'
+        answer: ['sunrise']
       }
     ]
   }
